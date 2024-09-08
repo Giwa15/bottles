@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singing a Song</title>
+    <script>
+        var igo = 99;
+
+        function lyrics() {
+
+            var songParagraph = document.getElementById("song");
+            songParagraph.innerHTML = " ";
+
+            while(igo > 0) {
+
+                songParagraph.innerHTML  += "The bottle number is " + igo + "<br>";
+                igo--;
+            }
+        }
+
+            
+            
+
+        
+    </script>
+</head>
+<body>
+
+    <h1>Singing about bottles</h1>
+
+    <p id="song"> Click the botton below to play the song</p>
+
+
+    <button type="button" onclick="lyrics()">Listen to my track</button>
+
+
+   
+</body>
+</html>
